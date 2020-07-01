@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Store:etc/config.xsd">
+    <default>
+        <payment>
+            <Payg>
+                <model>Payg\Payv2\Model\PaymentMethod</model>
+                <title>Payg</title>
+				<!-- <merchantkey backend_model="Magento\Config\Model\Config\Backend\Encrypted" />
+				<merchantid backend_model="Magento\Config\Model\Config\Backend\Encrypted" />
+				<aggregatorid backend_model="Magento\Config\Model\Config\Backend\Encrypted" />
+				<domainurl backend_model="Magento\Config\Model\Config\Backend\Encrypted" /> -->
+                <transactiontype>CHARGE</transactiontype>
+                <visible_on_cart>1</visible_on_cart>
+                <order_status>pending_payment</order_status>
+            </Payg>
+        </payment>
+    </default>
+</config>
