@@ -1,0 +1,56 @@
+﻿ <form #fPay="ngForm" (ngSubmit)="QuickPayProcess($event)" action={{url}} method="POST">                     
+                   
+                        <input placeholder="Email " id="email" name="email" [formControl]="email">
+
+
+                        <input placeholder="Mobile No" id="mobileno" name="mobileno" maxlength="10"
+                          [formControl]="mobileno" required>
+
+                    
+                        <input placeholder="Amount " id="Amount" [readonly]="true" name="amount" [(ngModel)]="chargebleAmount"
+                          [formControl]="Amount" required>
+
+             
+                  <button class="damke_siteBtn" color="primary" type="submit">Pay</button>
+
+                    <input type="hidden" name="PaymentModuleType" [(ngModel)]="PaymentModuleType">
+ 
+                  <input type="hidden" name="PaymentType" [(ngModel)]="PaymentType">
+                  <input type="hidden" name="CurrencyCode" [(ngModel)]="CurrencyCode">
+                  <input type="hidden" name="MerchantKeyId" [(ngModel)]="MerchantKeyId">
+                  <input type="hidden" name="AuthenticationKey" [(ngModel)]="AuthenticationKey">
+                  <input type="hidden" name="AuthenticationToken" [(ngModel)]="AuthenticationToken">
+                  <input type="hidden" name="RequestUniqueId" [(ngModel)]="RequestUniqueId">
+                  <input type="hidden" name="TransactionType" [(ngModel)]="TransactionType">
+                  <input type="hidden" name="ResponseRedirectUrl" [(ngModel)]="ResponseRedirectUrl">
+                  <input type="hidden" name="CancelRedirectUrl" [(ngModel)]="CancelRedirectUrl">
+                  <input type="hidden" name="RefTransactionId" [(ngModel)]="RefTransactionId">
+                  <input type="hidden" name="IndustrySpecicationCode" [(ngModel)]="IndustrySpecicationCode">
+                  <input type="hidden" name="CustomerName" [(ngModel)]="CustomerName">
+                  <input type="hidden" name="CustomerPhone" [(ngModel)]="CustomerPhone">
+                  <input type="hidden" name="CustomerEmail" [(ngModel)]="CustomerEmail">
+                  <input type="hidden" name="EmailReceipt" [(ngModel)]="EmailReceipt">
+                  <input type="hidden" name="OrderId" [(ngModel)]="OrderId">
+                  <input type="hidden" name="BillingAddress" [(ngModel)]="BillingAddress">
+                  <input type="hidden" name="BillingCity" [(ngModel)]="BillingCity">
+                  <input type="hidden" name="BillingState" [(ngModel)]="BillingState">
+                  <input type="hidden" name="BillingCountry" [(ngModel)]="BillingCountry">
+                  <input type="hidden" name="BillingZipCode" [(ngModel)]="BillingZipCode">
+                  <input type="hidden" name="ShippingAddress" [(ngModel)]="ShippingAddress">
+                  <input type="hidden" name="ShippingCity" [(ngModel)]="ShippingCity">
+                  <input type="hidden" name="ShippingState" [(ngModel)]="ShippingState">
+                  <input type="hidden" name="ShippingCountry" [(ngModel)]="ShippingCountry">
+                  <input type="hidden" name="ShippingZipCode" [(ngModel)]="ShippingZipCode">
+                  <input type="hidden" name="CustomerId" [(ngModel)]="CustomerId">
+                  <input type="hidden" name="CustomerNotes" [(ngModel)]="CustomerNotes">
+                  <input type="hidden" name="UserName" [(ngModel)]="UserName">
+                  <input type="hidden" name="RequestDateTime" [(ngModel)]="RequestDateTime">
+                  <input type="hidden" name="MarketSpecificCode" [(ngModel)]="MarketSpecificCode">
+                  <input type="hidden" name="EchoData" [(ngModel)]="EchoData">
+                  <input type="hidden" name="Level2" [(ngModel)]="Level2">
+                  <input type="hidden" name="Source" [(ngModel)]="Source">
+                  <input type="hidden" name="UserId" [(ngModel)]="UserId">
+               
+              
+
+        </form>
